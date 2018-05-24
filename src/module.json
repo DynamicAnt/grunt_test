@@ -1,0 +1,21 @@
+{
+  "script":[
+    {
+      "out":"company",
+      "src":[
+        "script/company/company",
+        "script/company/_validate"
+      ]
+    },
+    {
+      "out":"product",
+      "src":[
+        "script/product/add",
+        "script/product/star"
+      ]
+    }
+  ],
+  "style":[
+
+  ]
+}
