@@ -1,0 +1,539 @@
+@import "font_variables";
+@import "css3";
+
+@font-face {
+  	font-family: 'IconFont';
+  	src: url('/fonts/icomoon.eot');
+  	src: url('/fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+    	 url('/fonts/icomoon.woff') format('woff'),
+    	 url('/fonts/icomoon.ttf') format('truetype'),
+    	 url('/fonts/icomoon.svg') format('svg');
+  	font-weight: normal;
+  	font-style: normal;
+}
+.#{$baseClass} {
+    display: inline-block;
+    font-family: IconFont;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: px2rem(32px);
+}
+.icon-2x {
+    font-size: px2rem(64px);
+}
+.icon-3x {
+    font-size: px2rem(96px);
+}
+.icon-4x {
+    font-size: px2rem(128px);
+}
+.icon-5x {
+    font-size: px2rem(160px);
+}
+
+
+.loading{
+  animation: fa-spin 1s linear infinite;
+}
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+@-ms-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+@-moz-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+// icon animation
+.#{$baseClass}-rotate:hover {
+    @include rotate(180deg);
+}
+
+// font
+.#{$baseClass}-search:before{
+    content: get(search);
+}
+.#{$baseClass}-th:before{
+    content: get(th);
+}
+.#{$baseClass}-home:before{
+    content: get(home);
+}
+.#{$baseClass}-list:before{
+    content: get(list);
+}
+.#{$baseClass}-angle-double-right:before{
+    content: get(angle-double-right);
+}
+.#{$baseClass}-angle-up:before{
+  content: get(angle-up);
+}
+.#{$baseClass}-angle-down:before{
+    content: get(angle-down);
+}
+.#{$baseClass}-angle-right:before{
+    content: get(angle-right);
+}
+.#{$baseClass}-angle-left:before{
+    content: get(angle-left);
+}
+.#{$baseClass}-caret-down:before{
+    content: get(caret-down);
+}
+.#{$baseClass}-times-circle:before{
+    content: get(times-circle);
+}
+.#{$baseClass}-cog:before{
+    content: get(cog);
+}
+.#{$baseClass}-arrow-circle-up:before{
+    content: get(arrow-circle-up);
+}
+.#{$baseClass}-arrow-circle-o-up:before{
+    content: get(arrow-circle-o-up);
+}
+.#{$baseClass}-arrow-left:before{
+    content: get(arrow-left);
+}
+.#{$baseClass}-map-marker:before{
+    content: get(map-marker);
+}
+.#{$baseClass}-th-list:before{
+    content: get(th-list);
+}
+.#{$baseClass}-bars:before{
+    content: get(bars);
+}
+.#{$baseClass}-arrow-up:before{
+    content: get(arrow-up);
+}
+.#{$baseClass}-th-large:before{
+    content: get(th-large);
+}
+.#{$baseClass}-jpy:before{
+    content: get(jpy);
+}
+.#{$baseClass}-heart:before{
+    content: get(heart);
+}
+.#{$baseClass}-chevron-down:before{
+    content: get(chevron-down);
+}
+.#{$baseClass}-refresh:before{
+    content: get(refresh);
+}
+.#{$baseClass}-envelope:before{
+    content: get(envelope);
+}
+.#{$baseClass}-envelope-o:before{
+  content: get(envelope-o);
+}
+.#{$baseClass}-check:before{
+    content: get(check);
+}
+.#{$baseClass}-check-circle:before{
+    content: get(check-circle);
+}
+.#{$baseClass}-question-circle:before{
+  content: get(question-circle);
+}
+.#{$baseClass}-info-circle:before{
+  content: get(info-circle);
+}
+.#{$baseClass}-reply:before{
+    content: get(reply);
+}
+.#{$baseClass}-home-purchase:before{
+    content: get(home-purchase);
+}
+.#{$baseClass}-home-category:before{
+    content: get(home-category);
+}
+.#{$baseClass}-home-vo:before{
+    content: get(home-vo);
+}
+.#{$baseClass}-home-yp:before{
+    content: get(home-yp);
+}
+
+// cn icon
+.#{$baseClass}-food:before{
+    content: get(food);
+}
+.#{$baseClass}-apparel:before{
+    content: get(apparel);
+}
+.#{$baseClass}-menu-more:before{
+    content: get(menu-more);
+}
+.#{$baseClass}-mode-text:before{
+    content: get(mode-text);
+}
+.#{$baseClass}-mode-big-picture:before{
+    content: get(mode-big-picture);
+}
+.#{$baseClass}-original:before{
+    content: get(original);
+}
+.#{$baseClass}-home-goods:before{
+    content: get(home-goods);
+}
+.#{$baseClass}-goods:before{
+    content: get(goods);
+}
+.#{$baseClass}-elec-component:before{
+    content: get(elec-component);
+}
+.#{$baseClass}-transport:before{
+    content: get(transport);
+}
+.#{$baseClass}-toys:before{
+    content: get(toys);
+}
+.#{$baseClass}-tools:before{
+    content: get(tools);
+}
+.#{$baseClass}-textile:before{
+    content: get(textile);
+}
+.#{$baseClass}-sporting:before{
+    content: get(sporting);
+}
+.#{$baseClass}-daily-use:before{
+    content: get(daily-use);
+}
+.#{$baseClass}-office:before{
+    content: get(office);
+}
+.#{$baseClass}-manufacture:before{
+    content: get(manufacture);
+}
+.#{$baseClass}-lights:before{
+    content: get(lights);
+}
+.#{$baseClass}-instruments:before{
+    content: get(instruments);
+}
+.#{$baseClass}-industry:before{
+    content: get(industry);
+}
+.#{$baseClass}-health:before{
+    content: get(health);
+}
+.#{$baseClass}-furniture:before{
+    content: get(furniture);
+}
+.#{$baseClass}-energy:before{
+    content: get(energy);
+}
+.#{$baseClass}-electrical:before{
+    content: get(electrical);
+}
+.#{$baseClass}-edit:before{
+    content: get(edit);
+}
+.#{$baseClass}-decoration:before{
+    content: get(decoration);
+}
+.#{$baseClass}-consumer-electric:before{
+    content: get(consumer-electric);
+}
+.#{$baseClass}-computer:before{
+    content: get(computer);
+}
+.#{$baseClass}-chemicals:before{
+    content: get(chemicals);
+}
+.#{$baseClass}-bags:before{
+    content: get(bags);
+}
+.#{$baseClass}-auto:before{
+    content: get(auto);
+}
+.#{$baseClass}-arts:before{
+    content: get(arts);
+}
+.#{$baseClass}-mode-text-picture:before{
+    content: get(mode-text-picture);
+}
+.#{$baseClass}-print:before{
+    content: get(print);
+}
+.#{$baseClass}-safe:before{
+    content: get(safe);
+}
+/*
+.#{$baseClass}-email:before{
+    content: get(email);
+}
+.#{$baseClass}-showroom:before{
+    content: get(showroom);
+}
+.#{$baseClass}-republic:before{
+    content: get(republic);
+}*/
+.#{$baseClass}-briefcase:before{
+    content: get(briefcase);
+}
+.#{$baseClass}-backtop:before{
+    content: get(backtop);
+}
+.#{$baseClass}-package:before{
+  content: get(package);
+}
+.#{$baseClass}-building:before{
+  content: get(building);
+}
+.#{$baseClass}-device:before{
+  content: get(device);
+}
+.#{$baseClass}-machining:before{
+  content: get(machining);
+}
+.#{$baseClass}-wrench:before{
+  content: get(wrench);
+}
+
+.#{$baseClass}-cable:before{
+  content: get(cable);
+}
+.#{$baseClass}-battery:before{
+  content: get(battery);
+}
+.#{$baseClass}-socket:before{
+  content: get(socket);
+}
+.#{$baseClass}-plug:before{
+  content: get(plug);
+}
+.#{$baseClass}-lightning:before{
+  content: get(lightning);
+}
+
+.#{$baseClass}-pressure:before{
+  content: get(pressure);
+}
+.#{$baseClass}-fitting:before{
+  content: get(fitting);
+}
+.#{$baseClass}-pwr-strip:before{
+  content: get(pwr-strip);
+}
+.#{$baseClass}-clean:before{
+  content: get(clean);
+}
+
+.#{$baseClass}-electric:before{
+  content: get(electric);
+}
+.#{$baseClass}-pneumatic:before{
+  content: get(pneumatic);
+}
+.#{$baseClass}-abrasives:before{
+  content: get(abrasives);
+}
+
+.#{$baseClass}-ruler:before{
+  content: get(ruler);
+}
+.#{$baseClass}-graduate:before{
+  content: get(graduate);
+}
+.#{$baseClass}-instruments-1:before{
+  content: get(instruments-1);
+}
+.#{$baseClass}-testing:before{
+  content: get(testing);
+}
+.#{$baseClass}-instruments-2:before{
+  content: get(instruments-2);
+}
+
+.#{$baseClass}-loading:before{
+  content: get(loading);
+}
+
+
+.#{$baseClass}-check-circle-o:before{
+  content: get(check-circle-o);
+}
+.#{$baseClass}-question-circle-o:before{
+  content: get(question-circle-o);
+}
+.#{$baseClass}-times-circle-o:before{
+  content: get(times-circle-o);
+}
+.#{$baseClass}-info-circle-o:before{
+  content: get(info-circle-o);
+}
+
+.#{$baseClass}-add-o:before{
+  content: get(add-o);
+}
+.#{$baseClass}-del-o:before{
+  content: get(del-o);
+}
+.#{$baseClass}-tel-o:before{
+  content: get(tel-o);
+}
+.#{$baseClass}-convert-o:before{
+  content: get(convert-o);
+}
+.#{$baseClass}-eceipt-o:before{
+  content: get(eceipt-o);
+}
+.#{$baseClass}-integral-star-o:before{
+  content: get(integral-star-o);
+}
+.#{$baseClass}-message-o:before{
+  content: get(message-o);
+}
+.#{$baseClass}-bell-o:before{
+  content: get(bell-o);
+}
+.#{$baseClass}-tag-o:before{
+  content: get(tag-o);
+}
+.#{$baseClass}-gift-o:before{
+  content: get(gift-o);
+}
+.#{$baseClass}-love-o:before{
+  content: get(love-o);
+}
+.#{$baseClass}-rmb-o:before{
+  content: get(rmb-o);
+}
+.#{$baseClass}-user-o:before{
+  content: get(user-o);
+}
+.#{$baseClass}-user:before{
+  content: get(user);
+}
+
+.#{$baseClass}-star:before{
+  content: get(star);
+}
+.#{$baseClass}-star-o:before{
+  content: get(star-o);
+}
+.#{$baseClass}-ypuser:before{
+  content: get(ypuser);
+}
+.#{$baseClass}-yptel:before{
+  content: get(yptel);
+}
+.#{$baseClass}-ypshowroom:before{
+  content: get(ypshowroom);
+}
+.#{$baseClass}-yplogo:before{
+  content: get(yplogo);
+}
+.#{$baseClass}-lock:before{
+  content: get(lock);
+}
+.#{$baseClass}-shield:before{
+  content: get(shield);
+}
+.#{$baseClass}-filter-o:before{
+    content: get(filter-o);
+}
+.#{$baseClass}-map-marker-o:before{
+    content: get(map-marker-o);
+}
+.#{$baseClass}-search-list-o:before{
+    content: get(search-list-o);
+}
+
+//showroom icon
+.#{$baseClass}-home-o:before{
+  content: get(home-o);
+}
+.#{$baseClass}-list-o:before{
+  content: get(list-o);
+}
+.#{$baseClass}-company-o:before{
+  content: get(company-o);
+}
+.#{$baseClass}-contact-o:before{
+  content: get(contact-o);
+}
+.#{$baseClass}-pro-list-o:before{
+  content: get(pro-list-o);
+}
+.#{$baseClass}-win-o:before{
+  content: get(win-o);
+}
+.#{$baseClass}-list-other-o:before{
+  content: get(list-other-o);
+}
+.#{$baseClass}-check-mark:before{
+    content: get(check-mark);
+}
+
+//share icon
+.#{$baseClass}-share-square-o:before{
+  content: get(share-square-o);
+}
+.#{$baseClass}-share-wx:before{
+  content: get(share-wx);
+}
+.#{$baseClass}-share-pyq:before{
+  content: get(share-pyq);
+}
+.#{$baseClass}-share-qq:before{
+  content: get(share-qq);
+}
+.#{$baseClass}-share-sina:before{
+  content: get(share-sina);
+}
+
+//tip
+.#{$baseClass}-exclamation-circle:before{
+  content:get(exclamation-circle);
+}
+
+
+.#{$baseClass}-ellipsis-h:before{
+  content: get(ellipsis-h);
+}
+.#{$baseClass}-comments-o:before{
+  content: get(comments-o);
+}
+

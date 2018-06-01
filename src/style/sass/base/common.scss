@@ -1,0 +1,426 @@
+// import css
+@import "mobile";
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: px2rem(28px);
+  -webkit-text-size-adjust: none;
+  overflow-x: hidden;
+  color: #333;
+}
+
+input[type='text'],
+input[type='password'],
+select,
+button,
+textarea {
+  font-size: inherit;
+  margin: 0;
+  color: $textColor;
+  @include border-radius(0);
+  @include appearance(none);
+  @include box-sizing(border-box);
+  &:focus {
+    outline: none;
+  }
+}
+
+label {
+  input {
+    margin: -2px 3px 0 0;
+    vertical-align: middle;
+  }
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+  height: 100px;
+  border: 1px solid #ccc;
+  line-height: 1.2;
+  padding: 5px;
+}
+
+.btn {
+  @include box-sizing(border-box);
+}
+
+.txt {
+  border: 1px solid #ccc;
+  height: 32px;
+  padding: 0 10px;
+  @include box-sizing(border-box);
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border: 1px solid $blue;
+}
+
+.select {
+  position: relative;
+  select {
+    border: none;
+    height: 34px;
+    padding: 0 16px 0 5px;
+    width: 100%;
+  }
+  .icon {
+    position: absolute;
+    right: 6px;
+    top: 9px;
+  }
+}
+
+// clear
+.clear:before,
+.clear:after {
+  content: '';
+  display: table;
+}
+
+.clear:after {
+  clear: both;
+}
+
+.gt{
+  font-family:simsun;
+}
+
+a {
+  text-decoration: none;
+  color: $blue;
+  -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+  &:focus {
+    outline: none;
+  }
+}
+
+img {
+  vertical-align: middle;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+.tb-dtl {
+  th, td {
+    border: 1px solid $borderColor;
+    padding: 9px;
+  }
+  th {
+    text-align: right;
+    background-color: lighten($bgGray, 8%);
+    width: 30%;
+  }
+  color: $gray;
+  a {
+    color: $blue;
+  }
+}
+
+h4 {
+  font-size: px2rem(30px);
+}
+
+h3 {
+  font-size: px2rem(32px);
+}
+
+.h1 {
+  display: inline;
+  font-size: px2rem(28px);
+}
+
+.icon {
+  font-size: px2rem(32px);
+  color: $grayLight;
+  vertical-align: middle;
+}
+
+.icon-check {
+  color: $green;;
+}
+
+.clearfix:after {
+  content: " ";
+  display: table;
+  visibility: hidden;
+  clear: both;
+}
+
+.gray {
+  color: $gray;
+}
+
+.gray-light {
+  color: $grayLight;
+}
+
+.red {
+  color: $red;
+}
+
+.green,
+.icon-check-circle-o {
+  color: $green;
+}
+
+.icon-info-circle-o {
+  color: #26b7e6;
+}
+
+.v-sep {
+  color: lighten($grayLight, 10%);
+  margin: 0 5px;
+}
+
+.f12 {
+  font-size: px2rem(24px);
+}
+
+.tc {
+  text-align: center;
+}
+
+// flag adv
+.flag-adv {
+  width: 24px;
+  height: 14px;
+  background: url(../../../img/icon_adv.png) no-repeat;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+// cancel highlight when click a link or javascript element
+.unlight {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+// widgets
+// =====================================
+// warn tip
+$warntipWidth: 200px;
+.warntip {
+  padding: 10px 0;
+  text-align: center;
+  width: $warntipWidth;
+  background-color: $black;
+  opacity: .7;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: - $warntipWidth/2;
+  color: $white;
+  @include box-shadow(0 0 5px $black);
+  z-index: 999;
+}
+
+.container {
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.content {
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.strip {
+  display: block;
+  height: px2rem(60px);
+  line-height: px2rem(60px);
+  padding: 0 px2rem(20px);
+  margin-top: px2rem(20px);
+  background-color: #fff;
+  font-size: px2rem(24px);
+}
+
+// footer
+.footer{
+  background: #fff;
+}
+.user-entrance {
+  text-align: center;
+  a {
+    line-height: px2rem(48px);
+    padding: 0 20px;
+    font-size: px2rem(26px);
+    border: 1px solid #dadada;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 3px;
+    margin: 0 px2rem(10px);
+    color: #666;
+    background-color: #fff;
+  }
+}
+
+.user-login-info{
+  text-align: center;
+  padding:px2rem(20px) 0;
+}
+.backtop {
+  float: right;
+  .icon {
+    margin-left: 5px;
+    color: $blue;
+    vertical-align: -2px;
+  }
+}
+
+.visit-mode,
+.copyright {
+  text-align: center;
+}
+
+.visit-mode {
+  padding: 15px 0;
+  span {
+    margin: 0 10px;
+  }
+  a {
+    margin: 0 10px;
+  }
+}
+
+.copyright {
+  text-align: center;
+  padding-bottom: 15px;
+  font-size: px2rem(24px);
+}
+
+.hot-words {
+  border-bottom: 2px solid $red;
+  height: 32px;
+  overflow: hidden;
+}
+
+.hot-words-lst {
+  overflow: hidden;
+  li {
+    float: left;
+    margin: 10px 5px 10px 12px;
+  }
+  a {
+    color: $blue;
+  }
+
+}
+
+// page alpha layer
+.alpha-page {
+  position: fixed;
+  z-index: 990;
+  top: 44px;
+  bottom: 0;
+  width: 100%;
+  background-color: $black;
+  opacity: .5;
+}
+
+img.lazy {
+  display: none;
+}
+
+// business icon
+.icon-basic {
+  background: url("../../../img/icon-basic.png");
+}
+
+.icon-ccic {
+  background: url("../../../img/icon_ccic_m.png");
+}
+
+.icon-addr {
+  background: url("../../../img/icon_addr_m.png");
+}
+
+.icon-id {
+  background: url("../../../img/icon_id_m.png");
+}
+
+.icon-senior {
+  background: url("../../../img/icon-senior.png");
+}
+
+.icon-toprank {
+  background: url("../../../img/icon-toprank.png");
+}
+
+.icon-yqt {
+  background: url("../../../img/icon-yqt.png");
+}
+
+
+.icon-auth {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: -3px;
+  margin-right: 3px;
+  @include background-size(16px 16px);
+
+}
+
+.icon-auth-m {
+  display: inline-block;
+  width: px2rem(40px);
+  height: px2rem(40px);
+  vertical-align: 0;
+  margin-right: 3px;
+  @include background-size(px2rem(40px) px2rem(40px));
+}
+
+// crumb
+.crumb {
+  padding: px2rem(16px) px2rem(20px);
+  margin-top: -1px;
+  line-height: px2rem(40px);
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  background: #fff;
+  font-size: px2rem(24px);
+  span {
+    color: $gray;
+  }
+  label {
+    color: $grayLight;
+  }
+  a {
+    color: $gray;
+  }
+}
+
+//gotoTop
+.goto-top {
+  position: fixed;
+  right: 5px;
+  top: 60%;
+
+  width: px2rem(70px);
+  height: px2rem(70px);
+  line-height: px2rem(66px);
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #ccc;
+  text-align: center;
+}
+
+.of-hidden {
+  overflow: hidden;
+}
